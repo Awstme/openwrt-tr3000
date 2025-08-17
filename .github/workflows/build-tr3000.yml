@@ -1,9 +1,15 @@
-name: Main
+name: build immortalwrt for tr3000
 permissions: write-all
 on:
-  push:
-    tags:
-      - "v*.*.*"
+  # push:
+  #   tags:
+  #     - "v*.*.*"
+  workflow_dispatch:
+    # inputs:
+    #   description:
+    #     description: '手动触发编译'
+    #     required: false
+    #     default: '手动触发 ImmortalWRT 编译'
 
 jobs:
   build:
