@@ -57,10 +57,10 @@ jobs:
           cd openwrt
           make -j8
           
-      - name: Rename the default bin
-        run: |
-          cd openwrt/bin/targets/mediatek/filogic/
-          mv immortalwrt-mediatek-filogic-cudy_tr3000-v1-squashfs-sysupgrade.bin openwrt-mediatek-filogic-cudy_tr3000-v1-squashfs-sysupgrade-default.bin
+      # - name: Rename the default bin
+      #   run: |
+      #     cd openwrt/bin/targets/mediatek/filogic/
+      #     mv immortalwrt-mediatek-filogic-cudy_tr3000-v1-squashfs-sysupgrade.bin openwrt-mediatek-filogic-cudy_tr3000-v1-squashfs-sysupgrade-default.bin
 
       # - name: apply and apply patch
       #   env:
